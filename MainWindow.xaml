@@ -1,0 +1,47 @@
+<Window x:Class="BT_WPF_8n12.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BT_WPF_8n12"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lblHoDem" Content="Họ đệm:" 
+               HorizontalAlignment="Left" 
+               Margin="85,72,0,0" 
+               VerticalAlignment="Top"
+               FontSize="16"
+               FontFamily="Arial"/>
+        <Label x:Name="lblTen" Content="Tên:" 
+            HorizontalAlignment="Left" 
+            Margin="117,142,0,0" 
+            VerticalAlignment="Top"
+            FontFamily="Arial"
+            FontSize="16"/>
+        <TextBox x:Name="txtHodem" HorizontalAlignment="Left" 
+                 Margin="208,73,0,0" Text="" 
+                 TextWrapping="Wrap" VerticalAlignment="Top" 
+                 Width="160"
+                 Height="30"/>
+        <TextBox x:Name="txtTen" HorizontalAlignment="Left" 
+            Margin="208,142,0,0" Text="" 
+            TextWrapping="Wrap" VerticalAlignment="Top" 
+            Width="160"
+            Height="30"
+                 FontSize="16"/>
+        <Button x:Name="btn1" Content="Xem thông tin" 
+                HorizontalAlignment="Left" 
+                Margin="85,240,0,0" 
+                VerticalAlignment="Top"
+                Width="100"
+                Height="30" Click="btn1_Click"/>
+        <Button x:Name="btn2" Content="Nhập lại" 
+            HorizontalAlignment="Left" 
+            Margin="268,240,0,0" 
+            VerticalAlignment="Top"
+            Width="100"
+            Height="30" Click="btn2_Click"/>
+
+    </Grid>
+</Window>
